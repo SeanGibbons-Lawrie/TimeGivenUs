@@ -1,8 +1,8 @@
 import { Button } from './Button.js'
+import { Character } from './Character.js'
+import { Player } from './Player.js'
+import { UI } from './UI.js'
 
-//Testing adding resources on click
-let gold = 0
-let str = 0
 
 window.onload = function () {
   const canvas = document.getElementById('canvas')
@@ -34,6 +34,20 @@ window.onload = function () {
       pos.y > Button.ypoint
     )
   }
+  //Test UI
+  const ui = new UI({
+    gold: 3,
+    time: 3,
+  })
+
+  //Test Character
+  const player = new Player({
+    hp: 50,
+    maxHp: 100,
+    xp: 50,
+    maxXp: 100,
+  })
+  console.log(player)
 
   //Test Box
   const test = new Button({
@@ -60,6 +74,9 @@ window.onload = function () {
 
       if (isInside(mousePos, test)) {
         console.log(`clicked inside ${test}`)
+        //testing player stats can be altered
+        player.maxHp += 20
+        console.log(player.maxHp)
         // gold++
         // console.log(gold)
       } else {
