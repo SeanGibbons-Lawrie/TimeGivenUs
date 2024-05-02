@@ -1,23 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style rel="stylesheet" href="/styles.css" type="text/css"></style>
-  <title>TimeGivenUs - MVP</title>
-</head>
-<body>
-  <div class="game-container">
-    <canvas id="canvas">hello world</canvas>
-  </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" type="text/css"></style>
+    <script src="src/main.js" type="module"></script>
 
-  <!-- Scripts -->
-  <script src="Button.js" type="module" ></script>
-  <!-- <script src="Overworld.js" type="module" ></script> -->
-  <script src="Main.js" type="module" ></script>
-  <!-- <script src="Init.js" type="module" ></script> -->
+    <title>TimeGivenUs - MVP</title>
+  </head>
+  <body onload="prepareGame()">
+    <div id="main_content">
+      <div id="global_content">
+        <div id="basic_character_info_div" class="box_div">
+          <div id="character_name_div">
+            <input type="text" id="character_name_field" />
+          </div>
 
-</body>
+          <div id="character_health_div">
+            <div id="character_healthbar_max">
+              <div id="character_healthbar_current"></div>
+            </div>
+            <div id="character_health_value"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      function prepareGame() {}
+    </script>
+  </body>
 </html>
-
