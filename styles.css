@@ -27,7 +27,28 @@ body {
 #basic_character_info_div {
   width: 400px;
   height: 130px;
-  z-index: 1;
+}
+
+#activity_choices_div {
+  left: 422px;
+  width: 900px;
+  height: 550px;
+}
+
+#activity_title {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 26px;
+}
+
+#activity_1_div {
+  left: 60px;
+  width: 300px;
+  height: 140px;
+  border: 3px solid #797691;
+  position: absolute;
+  background-color: rgb(49, 49, 49);
+  opacity: 0.5;
 }
 
 .game_info a,

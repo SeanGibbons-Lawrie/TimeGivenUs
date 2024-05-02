@@ -9,6 +9,9 @@ const current_health_bar = document.getElementById(
   'character_healthbar_current'
 )
 
+const activity_1_div = document.getElementById('activity_1_div')
+const activity_1_text = document.getElementById('activity_1_text')
+
 const default_name = document.getElementById('character_name_field')
 
 function set_default_name() {
@@ -29,4 +32,8 @@ function update_displayed_health() {
     ).toString() + '%'
 }
 
-export { update_displayed_health, set_default_name }
+function update_activity_boxes() {
+  activity_1_text.innerText = 'Chop Firewood'
+}
+
+export { update_displayed_health, set_default_name, update_activity_boxes }
